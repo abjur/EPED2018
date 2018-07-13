@@ -1,0 +1,49 @@
+---
+title: "Minicurso Jurimetria" 
+author: "Fernando Correia e José de Jesus Filho"
+logo: "logo-abj.png"
+logo-scale: 1
+company: "Associação Brasileira de Jurimetria"
+company-address: "Rua Gomes de Carvalho, 1356, 2º andar. CEP 04547-005 - São Paulo, SP, Brasil"  
+company-site: "http://abj.org.br"
+output: 
+  abjTemplates::pdf_document:
+    toc: TRUE
+    keep_tex: TRUE
+bibliography: bibliography.bib
+nocite: |
+  @oxford2012, @leiter1997, @kastellec2010, @liu2017, @ash2017,
+  @epstein2014, @zeisel2012
+---
+
+# Ementa
+
+Com os avanços da computação e o uso crescente da informática na administração judiciária, existe disponível uma grande variedade de dados para consulta pública pela internet. Essa abundância informacional, entretanto, impõe uma série de desafios metodológicos. Perguntas simples como "Quais dados vou coletar?",  "Como vou obter os dados?" e "O que vou fazer com eles?" fazem parte do cotidiano de quem utiliza essas informações para pesquisa empírica. Neste workshop, vamos tratar das principais formas com que a justiça organiza seus dados e de quais formas eles podem ser acessados. Além disso, vamos (1) mostrar como as ferramentas desenvolvidas pela Associação Brasileira de Jurimetria podem ser usadas para obter dados de maneira eficaz e (2) construir um panorama geral dos métodos usualmente aplicados em pesquisas empíricas no Direito.
+
+# Tópicos
+
+1. Introdução à pesquisa empírica no direito: estudos prospectivos e retrospectivo;
+
+2. Quais dados vou coletar? 
+    + Onde se encontram dados do Judiciário: consulta processual, jurisprudência, Conselho Nacional de Justiça, diários de justiça
+    + Em que forma eles são armazenados? 
+    + Como a minha pergunta de pesquisa se relaciona com os dados? 
+
+3. Como obter os dados? (1h)
+    + Ferramentas da ABJ para coleta de dados sobre o Judiciário
+
+4. O que vou fazer com os dados? 
+
+## Estudo de casos
+
+1. Coleta e análise de decisões sobre tráfico de drogas;
+2. Coleta e análise de dados sobre audiência de custódia;
+3. O tempo como resposta: especialização das varas empresariais;
+4. O tempo do processo: análise da duração razoável do processo nas decisões do STF; 
+5. Extração de dados dos processos e das decisões judiciais: dados fáticos, elementos de provas, partes, substitutos processuais, perfil do réu, movimentação processo, dispositivo;
+6. Deixando o texto falar com modelagem tópica.
+
+# Bibliografia
+
+
+

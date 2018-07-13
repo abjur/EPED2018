@@ -1,0 +1,185 @@
+\documentclass[12pt]{article}
+
+\usepackage{ifxetex,ifluatex}
+
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+    \usepackage{xltxtra,xunicode}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+  \newcommand{\euro}{€}
+\fi
+
+\usepackage{amssymb,amsmath}
+\usepackage{float}
+\usepackage{fixltx2e} % provides \textsubscript
+\usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[portuguese]{babel}
+\usepackage{graphicx}
+\usepackage{indentfirst}
+\usepackage{lipsum}
+\usepackage{longtable}
+\usepackage{multicol}
+\usepackage[default,osfigures,scale=0.95]{opensans} %% Alternatively
+%% use the option 'defaultsans' instead of 'default' to replace the
+%% sans serif font only.
+\usepackage[T1]{fontenc}
+\usepackage{pdfpages}
+\usepackage[colorlinks=true,urlcolor=blue,citecolor=blue,linkcolor=blue]{hyperref}
+%\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\baselinestretch}{1.5}
+
+% Paper style
+\usepackage[
+  paperwidth=21cm,paperheight=29.7cm, % larger paper
+  layoutwidth=21cm,layoutheight=27.82cm, % A4 landscape
+  layouthoffset=0cm,layoutvoffset=1cm, % 1cm to crop on all sides
+  left=2cm,right=2cm,top=2cm,bottom=2cm,
+  headsep=\dimexpr3cm-72pt\relax,
+  headheight=72pt]{geometry}
+
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{\includegraphics[scale = 1]{logo-abj.png}}
+\lfoot{}
+\cfoot{Associação Brasileira de Jurimetria \\ Rua Gomes de Carvalho, 1356, 2º andar. CEP 04547-005 - São Paulo, SP,
+Brasil \\ \url{http://abj.org.br}}
+\rfoot{\text{} \\ \text{} \\ \thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+
+% Header information
+\title{Minicurso Jurimetria}
+\author{Fernando Correia e José de Jesus Filho}
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\begin{document}
+
+\maketitle
+
+\thispagestyle{fancy}
+
+{
+\hypersetup{linkcolor=black}
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\section{Ementa}\label{ementa}
+
+Com os avanços da computação e o uso crescente da informática na
+administração judiciária, existe disponível uma grande variedade de
+dados para consulta pública pela internet. Essa abundância
+informacional, entretanto, impõe uma série de desafios metodológicos.
+Perguntas simples como ``Quais dados vou coletar?'', ``Como vou obter os
+dados?'' e ``O que vou fazer com eles?'' fazem parte do cotidiano de
+quem utiliza essas informações para pesquisa empírica. Neste workshop,
+vamos tratar das principais formas com que a justiça organiza seus dados
+e de quais formas eles podem ser acessados. Além disso, vamos (1)
+mostrar como as ferramentas desenvolvidas pela Associação Brasileira de
+Jurimetria podem ser usadas para obter dados de maneira eficaz e (2)
+construir um panorama geral dos métodos usualmente aplicados em
+pesquisas empíricas no Direito.
+
+\section{Tópicos}\label{topicos}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Introdução à pesquisa empírica no direito: estudos prospectivos e
+  retrospectivo;
+\item
+  Quais dados vou coletar?
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Onde se encontram dados do Judiciário: consulta processual,
+    jurisprudência, Conselho Nacional de Justiça, diários de justiça
+  \item
+    Em que forma eles são armazenados?
+  \item
+    Como a minha pergunta de pesquisa se relaciona com os dados?
+  \end{itemize}
+\item
+  Como obter os dados? (1h)
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Ferramentas da ABJ para coleta de dados sobre o Judiciário
+  \end{itemize}
+\item
+  O que vou fazer com os dados?
+\end{enumerate}
+
+\subsection{Estudo de casos}\label{estudo-de-casos}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Coleta e análise de decisões sobre tráfico de drogas;
+\item
+  Coleta e análise de dados sobre audiência de custódia;
+\item
+  O tempo como resposta: especialização das varas empresariais;
+\item
+  O tempo do processo: análise da duração razoável do processo nas
+  decisões do STF;
+\item
+  Extração de dados dos processos e das decisões judiciais: dados
+  fáticos, elementos de provas, partes, substitutos processuais, perfil
+  do réu, movimentação processo, dispositivo;
+\item
+  Deixando o texto falar com modelagem tópica.
+\end{enumerate}
+
+\section*{Bibliografia}\label{bibliografia}
+\addcontentsline{toc}{section}{Bibliografia}
+
+\hypertarget{refs}{}
+\hypertarget{ref-ash2017}{}
+Ash, Elliott, and Daniel Chen. 2017. ``Predicting Punitiveness from
+Judicial Corpora.''
+
+\hypertarget{ref-oxford2012}{}
+Cane, Peter, and Herbert Kritzer. 2012. \emph{The Oxford Handbook of
+Empirical Legal Research}. OUP Oxford.
+
+\hypertarget{ref-epstein2014}{}
+Epstein, Lee, and Andrew D Martin. 2014. \emph{An Introduction to
+Empirical Legal Research}. Oxford University Press.
+
+\hypertarget{ref-kastellec2010}{}
+Kastellec, Jonathan P. 2010. ``The Statistical Analysis of Judicial
+Decisions and Legal Rules with Classification Trees.'' \emph{Journal of
+Empirical Legal Studies} 7 (2). Wiley Online Library: 202--30.
+
+\hypertarget{ref-leiter1997}{}
+Leiter, Brian. 1997. ``Rethinking Legal Realism: Toward a Naturalized
+Jurisprudence.'' \emph{Tex. L. Rev.} 76. HeinOnline: 267.
+
+\hypertarget{ref-liu2017}{}
+Liu, Zhenyu, and Huanhuan Chen. 2017. ``A Predictive Performance
+Comparison of Machine Learning Models for Judicial Cases.'' In
+\emph{Computational Intelligence (Ssci), 2017 Ieee Symposium Series on},
+1--6. IEEE.
+
+\hypertarget{ref-zeisel2012}{}
+Zeisel, Hans, and David Kaye. 2012. \emph{Prove It with Figures:
+Empirical Methods in Law and Litigation}. Springer Science \& Business
+Media.
+
+\end{document}
